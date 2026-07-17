@@ -22,7 +22,7 @@ jobs:
         with:
           distribution: temurin
           java-version: ${{ matrix.java-version }}
-      - uses: gradle/actions/setup-gradle@v4
+      - uses: gradle/actions/setup-gradle@v6
       - name: Build + test (includes spotless + examples, -Werror)
         run: ./gradlew build
 
@@ -35,7 +35,7 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
-      - uses: gradle/actions/setup-gradle@v4
+      - uses: gradle/actions/setup-gradle@v6
       - name: Generate all publication artifacts (jar, sources, javadoc, POM)
         run: |
           ./gradlew jar sourcesJar plainJavadocJar generatePomFileForMavenPublication
