@@ -1,7 +1,7 @@
 plugins {
     `java-library`
     id("com.diffplug.spotless") version "6.25.0"
-    id("com.vanniktech.maven.publish") version "0.34.0"
+    id("com.vanniktech.maven.publish") version "0.37.0"
 }
 
 group = "com.llmjury"
