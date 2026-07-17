@@ -1,0 +1,9 @@
+# Gradle
+.gradle/
+build/
+
+# Editors / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
